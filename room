@@ -1,0 +1,16 @@
+attendence : <list of object heads>
+engineers : <list of head models>
+reels : <list of recording heads>
+audiences : <list of seating zones>
+spaces : <list of impulse functions>
+lines : <list of function operators>
+
+microphones : <list of measuring devices>
+phantoms : <list of power suppliers>
+interfaces : <list of sound drivers>
+terminals : <list of control endpoints>
+
+directors : <list of path walkers>
+generators : <list of walk managers>
+executors : <list of managed workers>
+visitors : <list of work supervisors>
