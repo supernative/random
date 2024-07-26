@@ -15,7 +15,7 @@ use the rendered stereo file as a new environment
 fit a function for setting up basis state description
 """
 
-from signal import Console, Buffer, Clone
+from signal import Console, Buffer
 
 class Environment:
     def __init__(self, k):
@@ -30,11 +30,3 @@ class Environment:
 
     def __call__(self, length, program):
         yield program.prepare(self.main.process(length))
-
-    def store_graph(self, path):
-        image = Clone(self)
-        image.write(path)
-
-    def load_graph(self, path):
-        image = Clone(self)
-        image.load(path)
