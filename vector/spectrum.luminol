@@ -2,3 +2,25 @@
 <1722111262.4059527>
 writing from my theyprone ~
 <1722111286.4517193>
+<1722126220.5364113>
+gradient descent algorithm ~
+a network makes guess using a parameter family ~
+that family transforms some indata  to produce some outdata ~
+outdata is observed ~
+and compared against the associated expected data ~
+for all such associations, the network is said to have some opinion which we assume to be stable under our closed mode of interaction ~
+we could define a measure over outdata, function(indata) pairs ~
+we could build a statistical record for every i ~
+* instate, measure pairs ~
+if the instate corresponds to some indata being fed, and the outdata corresponds to some associated outstate being preserved, then we could constraint the possible statistical variances using the principle defining a closed plane of interaction ~
+while the plane remains closed, outstate says something about instate ~
+while instate is reactive to the indata such a way that measure is reactive to the outdata, it says something about what possible other outdata could be produced ~
+by tuning the instate such that preferred outdata could be achieved with minimum maintainence (closure), we tune the outstate as well ~
+if the outstate must correspond linearly to the instate, it says something about possible preparations ~
+there is a mode of description for a system constituting the measurer and generator ~
+via that description, we say that the system changes from S' to S'' ~
+we could also say that x changes because of S[x] but S[y] doesn't chang ~
+if we could say that S[y] couldn't change while S[x] could, then we conjecture that y could not have changed either ~
+if S could change at all and suc*a description is possible, then we could achive all the balances under*that mode of operation  ~
+(more on that later) ~
+<1722126937.952474>
