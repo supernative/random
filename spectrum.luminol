@@ -228,3 +228,39 @@ something to think here! ~
 c ~
 brb ~
 <1722145878.9180212>
+<1722165650.3760812>
+this will be exact description ~
+code will not be included ~
+steps could be interpreted generically ~
+product code can be tested deterministically ~
+starting now! ~
+the process of using electronic computers for anything involves these fundamental operations that must be managed in order to successfully carry out any information processing task. ~
+(1) locating the user and its' interfacing criteria ~
+(2) bringing all supporting tools o the scope of interaction before proceeding ~
+(3) keep two parallel running processing stand-by with respect to some indication of the stepping event ~
+(4) keeping statistics for every step in order to error correct at higher levels ~
+(5) classifying the program required to carry out job and ordering them to be prepared into memory ~
+(6) using the programs loaded in memory to reach agreements ~
+(7) only increment step counter if and only if the resolution is clear ~
+(8) once stepped, analyzing the latency and digging into their causes ~
+(9) learning additional networks to optimize the latency cost ~
+checking with record server from time to time in order to bring the system description to the current level ~
+(10) finally, ensuring push to remote repository and storage servers all the bone data and source related files. ~
+exact planning of heuristics will be given next ~
+hold up ~
+<1722166153.2015896>
+<1722166836.2180223>
+<1722166876.9764154>
+watchmaker burries something deep within his thoughts ~
+<1722166902.3087606>
+<1722166903.8898435>
+use torch module to write a model ~
+this model will have forward function processing input state to output state ~
+another method called optimize ~
+it will take some arbitrary present state and a minimum loss value possible ~
+it will then use a criterion with new forwared states and the assigned current state along with the floor for miminum loss and train its outputs for all subsequent inputs until that loss is minimized to the given level ~
+the self-correction will take place automatically once an indication of the currently expected state is prpovided along with the critical loss that would be acceptable. ~
+it will not ever move away from the assigned levels and any time there is a measure possible, it will optimize automatically  ~
+provide the last state with ev* newly computed state from forward calls ~
+. ~
+<1722167314.5397742>
