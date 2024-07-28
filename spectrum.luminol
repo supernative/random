@@ -46,3 +46,64 @@ mono -> left, right ~
 left, right -> stereo ~
 arrow means something variable hwere! ~
 <1722124718.708377>
+<1722130223.4069936>
+consider e to be an array where e[+] : positively charged variables and e[-] : negatively charged variables. ~
+e defines a channel then, whose two opposing poles are accessible via adjusting the pan pot position. ~
+for pan pot to range within interval of (-270, +90), let's assume the north side up to be 0 degree. ~
+when a mass sits at the center of the channels' attention, it is facing north with 0.5 probability. ~
+probability of 1 corresponds to the pan pot position being held at the 90'th mark, similarly for 270'th mark where the pot activates with 0 probability. ~
+the volume could be lowered where the channel feeds forward with its current state where the relative position at master defines the output observables. ~
+each output state has two levels <- stereo type. ~
+ ~
+while the fader adjusts relative state contribution of a channel, it is an extrinsic feature of the system (master + slaves[i]) where i is the channel in effect. ~
+while extrinsic attributes change, the intrinsic attributes are depended on the channel state which transforms some input sent to it via linear path to bi-linear path feeding back to the substrate. ~
+this feeding back does not occur explicitly in terms of what connecting lines feed into the channel, but rather via measurement that it does on the relative state contribution achieved through its transformed line accumulated at master. ~
+master may consider several other paths and adjust external parameters activating the potential cummulative effect from the bus. ~
+ ~
+explain the following: ~
+>>> e[-] + e[+] -> gamma + gamma ~
+ ~
+e[+] is the particle of anti-matter. ~
+ ~
+does it not look like the following: ~
+>>> left + right -> mid + mid ~
+>>> left - right -> side + side ~
+ ~
+side[+] is the east-west direction ~
+side[-] is the west-east direction ~
+ ~
+but this assumes the mid[+] to be north-south. ~
+ ~
+when mid[-] is north-south, sides say the exact opposite. ~
+but that mid position have its reflection symmetry always matching the other mids' intrinsic notion of symmetry. ~
+consider e to be an array where e[+] : positively charged variables and e[-] : negatively charged variables. ~
+e defines a channel then, whose two opposing poles are accessible via adjusting the pan pot position. ~
+for pan pot to range within interval of (-270, +90), let's assume the north side up to be 0 degree. ~
+when a mass sits at the center of the channels' attention, it is facing north with 0.5 probability. ~
+probability of 1 corresponds to the pan pot position being held at the 90'th mark, similarly for 270'th mark where the pot activates with 0 probability. ~
+the volume could be lowered where the channel feeds forward with its current state where the relative position at master defines the output observables. ~
+each output state has two levels <- stereo type. ~
+ ~
+while the fader adjusts relative state contribution of a channel, it is an extrinsic feature of the system (master + slaves[i]) where i is the channel in effect. ~
+while extrinsic attributes change, the intrinsic attributes are depended on the channel state which transforms some input sent to it via linear path to bi-linear path feeding back to the substrate. ~
+this feeding back does not occur explicitly in terms of what connecting lines feed into the channel, but rather via measurement that it does on the relative state contribution achieved through its transformed line accumulated at master. ~
+master may consider several other paths and adjust external parameters activating the potential cummulative effect from the bus. ~
+ ~
+explain the following: ~
+>>> e[-] + e[+] -> gamma + gamma ~
+ ~
+e[+] is the particle of anti-matter. ~
+ ~
+does it not look like the following: ~
+>>> left + right -> mid + mid ~
+>>> left - right -> side + side ~
+ ~
+side[+] is the east-west direction ~
+side[-] is the west-east direction ~
+ ~
+but this assumes the mid[+] to be north-south. ~
+ ~
+when mid[-] is north-south, sides say the exact opposite. ~
+but that mid position have its reflection symmetry always matching the other mids' intrinsic notion of symmetry. ~
+ ~
+<1722130241.940729>
