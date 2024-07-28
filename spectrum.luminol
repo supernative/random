@@ -265,3 +265,19 @@ provide the last state with ev* newly computed state from forward calls ~
 . ~
 <1722167314.5397742>
 <1722169397.4456024>
+<1722201479.3315494>
+what is required of these: ~
+(1) use indata/outdata for sampling/generating ~
+(2) frames/status for sequencing/activation ~
+(3) status/time for activation/tangent ~
+so that a stream could be ran on independent paths ~
+path1: user-agent interface ~
+path2: agent-user interface ~
+just like a two channel stereo system that could connect two microphones together, i want to use two models of microphone device that each simulate the mechanical aspects ~
+through that we could enable pure physics based optimization ~
+generators would now deal with causal patterns of continuous waves ~
+nus ~
+just as transformer or rnn would take an input sequence and generate completion, consider their input sequences to be indata to which they would produce outdata ~
+when the two is ran in parallel that is continuous through some continuous block of time before resetting the gradients ~
+-- prompt-completion in turns will together produce the microphone signnal that would have been produced if two speakers were in recording booth making a podcast ~
+<1722202750.4409108>
