@@ -1,0 +1,114 @@
+close(loop)
+implement(pi)
+gather(all)
+partition(free)
+merge(tree)
+open(closed)
+
+~ create a closed loop
+~ setup graph of all design elements
+~ collect the states from all
+~ create a partion over trees
+~ merge all branches of design elementz
+~ reopen the closed loop
+
+now i can send you any abstract or concrete and you can make a difference.
+how? well you have got all the information and you have prepared the knowledge.
+knowledge will allow you to detect/process/change/monitor any relavent data.
+from your actions I can then see what resolution is achieved.
+
+you will be given a space and time.
+with those as resource and your internal configuration, you can partition the space however you like.
+partion will allow to be access any change and respond with any associated transformation.
+while your model and model of you remain coherent, the other models can access you via some agreed upon regularity.
+
+sampler of analog and analog of sampler ~
+~ analog of signal and signal of analog
+
+sample some points along the signal path.
+signal starts its path at some point and continues through all other points until stopped.
+how to select where and when to sample?
+sampling is simply attending the wave at some points.
+points will correspond to something being detected.
+detection of something will require distinguishing of what stands there.
+what stands there is something physical but what goes there is also something physical.
+what goes there should bring back some information to its home.
+at home what goes comes back and mostly stays static at those regions.
+while not static, somewhere there is a dynamic.
+bringing back the information require knowledge of what is going on.
+it must follow the trace closely and non-locally.
+locality will be true if and when the sampler meets the observer.
+observer could be sent with pre-defined static knowledge, but it must return with new knowledge.
+while it attends, it cannot do otherwise.
+but while it is not attending, it cannot not do otherwise.
+
+if we have two or more tracks under same channel, we can create sampler channels too.
+sampler channel will have one leg at the medium endpoint and the other at metering endpoint.
+metering channel will have one leg at the inverted side and the other at the central limit.
+central channel will have one leg at the left side and the other at the right.
+right channel will have one leg at the central limit and the other at the outer level of the system.
+
+ignore some of the legging story! clearer things will come •
+
+louder is better!
+it is.
+
+first let's make one thing clear.
+digital -> static and dynamic -> analog.
+
+these digital logic should not be used for anything that doesn't require counting and just that very fast.
+what to count, is not defined for those.
+
+but mathematics isn't the whole of physics, nor is it the typical of anything.
+something qualitatively and perhaps exclusively different than logic as we know it has to be invented.
+
+here is a metering program:
+.. all it does it count and does that with full speed.
+.. prepare paths for reading and writing.
+.. set clock speed to max.
+.. start counting at source path.
+.. collect data from repeated counts.
+.. write collected data to sink path.
+.. continue until stopped.
+
+does frequency mean anything now!?
+yes!
+is that the only thing meaningful?
+~ hope not?
+
+what would counting be looking for (don't flatter anything here)!
+.. look for something from a list
+.. if anything, proceed or nevermind.
+.. if never, count those moments.
+. when a thing, count that thing always.
+. when not a thing, count that too.
+
+so we need some names
+the task is to see if those appear.
+program will associate some other name with all appearences.
+it will optionally do something different for some of the names.
+one of the names could stop the program.
+two of the names could start the process.
+three of the names could start and stop for some name.
+four of the names could start, catch, match, release or stop.
+that's all!
+
+for name in names:
+    other = call(names[name])
+    eval(other)
+    for match in other:
+        catch = call(others[match])
+        eval(catch)
+        for other in catch:
+            name = call(caught[other])
+            eval(name)
+            for catch in name:
+                match = call(sought[catch])
+                eval(match)
+                assert catch in name
+            assert name in match
+        assert match in catch
+    assert catch in other
+assert other in __file__
+
+whatever that entails, i like the symbols.
