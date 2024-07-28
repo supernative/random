@@ -107,3 +107,106 @@ when mid[-] is north-south, sides say the exact opposite. ~
 but that mid position have its reflection symmetry always matching the other mids' intrinsic notion of symmetry. ~
  ~
 <1722130241.940729>
+<1722144688.207112>
+obviously you can't count things with quantum observables. ~
+isn't that surprising? ~
+no it's not! ~
+what do you want to do that for and who the fuck do you think you are speaking with • ~
+here I forbid your measurement bucko! ~
+.. collapse of wave function (science says) ~
+ ~
+i don't like the mode. ~
+.. transistorized computers i mean. ~
+ ~
+how is it possible to get completely outside of something that is a field of its own where I can have entangled states. ~
+as I am in it, I apparantly can visit other fields and nothing commutes with me/  ~
+somehow these discrete batches of attractors can pull me in while my bits travel from one place to the other. ~
+ ~
+anyhow, it must go. ~
+ ~
+i need a multitrack and only two level system. ~
+like a stereo speaker that could play a huge stack paralleled over coherent two levels. ~
+it also remain coherent all the way until we place the new record which again manages. ~
+ ~
+everything I do now and everything I could do with the current environment could be entirely ported over to stereo-multitrack environment. ~
+first I have to prove that fact via equivalency tests. ~
+these tests will sign off on the contract completely, if passed. ~
+ ~
+mimic that: ~
+>>> read file called A ~
+>>> look for segments called B ~
+>>> if B is found, read file C ~
+>>> if C is possible, look for segment called D ~
+>>> if D is found, quit ~
+>>> if C is impossible, quit ~
+>>> write file called C ~
+>>> include segment called B ~
+>>> include nothing if segment B is impossible ~
+>>> quit out ~
+ ~
+create three channels of stereo type. ~
+label channels as Aa, Bb, Cc. ~
+load data X to A with and -X to B. ~
+read A + B into a and write a * B to b. ~
+render AB as Z and load data Z to cC. ~
+read B + C into b and write b * C to a. ~
+.. ~
+permute, store, replace and merge like so until final image. ~
+ ~
+let's talk about memory! ~
+ ~
+import memory_manager ~
+ ~
+# Create a memory manager ~
+manager = memory_manager.create_manager() ~
+ ~
+# Allocate memory ~
+memory_manager.allocate_memory(manager, 10) ~
+ ~
+# Set memory ~
+memory_manager.set_memory(manager, [i for i in range(10)]) ~
+ ~
+# Get and print memory ~
+print(memory_manager.get_memory(manager)) ~
+ ~
+# Destroy the memory manager ~
+memory_manager.destroy_manager(manager) ~
+ ~
+this memory manager contains all source required for low level operations. ~
+ ~
+• we need to build a C extension too. ~
+ ~
+from setuptools import setup, Extension ~
+ ~
+setup( ~
+    name='memory_manager', ~
+    version='1.0', ~
+    ext_modules=[Extension('memory_manager', sources=['memory_manager.c'])], ~
+) ~
+ ~
+• now let's dive into the memory_manager.c aspects. ~
+.. include python header <Python.h> and standard lib ~
+.. define a structure for managing the state ~
+typedef struct { ~
+    int *data; // pointer to the integer valued data field ~
+    size_t size; // size indicator as attribute ~
+} MemoryManager; // establish namespace ~
+ ~
+.. create a static type for python object state called create_manager ~
+ ~
+static PyObject* create_manager(PyObject* self, PyObject* args) { ~
+    MemoryManager* manager = (MemoryManager*) malloc(sizeof(MemoryManager)); ~
+    if (manager == NULL) { ~
+        set stringed message showing error case! ~
+        return NULL; ~
+    }; ~
+    manager -> data = NULL; ~
+    manager -> size = 0; ~
+    return something called pycapsule that will use the manager field to construct an object called "MemoryManager" ~
+} ~
+ ~
+ ~
+bunch of other stuff that uses like statements .. i feel boring! ~
+ ~
+let's quit here. ~
+<1722144703.2642982>
