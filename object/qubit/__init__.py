@@ -1,5 +1,5 @@
 # Provides end-to-end functional tools for computing states.
-# Operations possible include (tensor product, direct sum, controlled not operation)
+# Operations possible include (tensor product, direct sum, controlled not operation, hadamard gate activation)
 
 import torch
 
@@ -60,4 +60,22 @@ def cnot(control, target):
 control_bit = 1
 target_bit = 0
 result = cnot(control_bit, target_bit)
+print(result)
+
+def hadamard(qubit):
+    # Define the Hadamard matrix
+    hadamard_matrix = torch.tensor([[1, 1],
+                                    [1, -1]], dtype=torch.float32) / torch.sqrt(torch.tensor(2.0))
+    
+    # Create the qubit state tensor
+    qubit_tensor = torch.tensor([1 - qubit, qubit], dtype=torch.float32)
+    
+    # Apply the Hadamard gate
+    output_state = torch.matmul(hadamard_matrix, qubit_tensor)
+    
+    return output_state
+
+# Example usage:
+qubit = 1  # |1⟩ state
+result = hadamard(qubit)
 print(result)
