@@ -24,3 +24,29 @@ if we could say that S[y] couldn't change while S[x] could, then we conjecture t
 if S could change at all and suc*a description is possible, then we could achive all the balances under*that mode of operation  ~
 (more on that later) ~
 <1722126937.952474>
+<1722169423.7028122>
+replace ONE NOTE & there WILL BE DIMINISHMENT ~
+sphere maps one to one fashion all activities inside a terminal session ~
+terminal maps every commands to *radial distance vector ~
+it maps every relative positions in the path to horizontal displacement on xy plane ~
+it maps every change in memory/state to the theta ~
+it maps every steps since change in state to projection of * onto xy plane ~
+it maps every change of directory to z component ~
+ ~
+sphere maps user at the root (origin) ~
+every change in the path from initial path will map vector from root to current position on sphere surface ~
+every level down from root path will map some quantity along z-dimension being changed for every step along x axis ~
+every step along x-direction is a change of position or path ~
+if any process is started (called)), the program executable gets star value which computes the theta with respect to xyz being static from the last state of the user ~
+then from the star position, the user moves toward the horizontal projection of the program (star) which connects a straight path from origin (current position) to some point on the plane. ~
+what is phi for terminal session? ~
+phi is what angle that would enable a straight path from the origin to the projected point whose perpendicular line at that position touches the star at theta degree away from the standard z axis. ~
+<1722170113.6068869>
+<1722170798.037623>
+correspondence yable: ~
+(1) ls : theta : tree view of local scope : future light cone ~
+* note: theta should have been phi but i will continue for now ~
+(2) cmd : phi : executable code in memory : boolean observable state ~
+(3) free -h : rho : memory view in resource : random access memory ~
+(4) set : psi : terminal session state : environment configuration filse ~
+<1722171354.2838798>
