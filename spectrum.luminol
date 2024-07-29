@@ -303,3 +303,19 @@ there cannot be such a base level as something that brings about an exclusively 
 definetely it cannot refer to computers if it could be built and those descriptors are universal themselves ~
 *themselve ~
 <1722227749.1959014>
+<1722232439.8578863>
+defining concretely (stereo, mono) ~
+mid-side matrix is a thing that translates between left-right and mid-si ~
+*mid-side m ~
+an active MS matrix will use two pairs of buffers, some terminals, adde, inverter only m ~
+either left or mid arrives at the buffer[0] which connects to the positive terminal of the device ~
+from terminal endpoint, the signal travels down to the adder module ~
+adder connects to the sink buffer in two possible ways (straight thru to positive, side injection accumlated via negative terminal connection ~
+the final output is either mid or *left ~
+i have misspoke ~
+never mind the circuitry details ~
+i am not an electrical guy, although i would have loved to be  ~
+basically it turns left-right inputs to produce mid-side output or mid-sides input to transform left-right outputs ~
+there are some isolating techniques going on as these are parallel constructors ~
+more on those later ~
+<1722233630.3543015>
