@@ -1,37 +1,39 @@
-import subprocess
+import transformer
+import data
 
-cmd = ["pip install PyGithub"]
+program = transformer.set_network(config)
+optimizer = transformer.set_optimizer(program)
+criterion = transformer.set_criterion()
 
-def run_command(command):
-    process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE, text=True)
-    stdout, stderr = process.communicate()
-    return_code = process.returncode
-    return stdout, stderr, return_code
+buffer = data.load_file("buffer")
+multitrack = data.load_file("multitrack")
 
-stdout, stderr, return_code = run_command(cmd[-1])
+"""
+steps:
+. create an environment
+. model room characteristics
+. train empty -> mono -> stereo -> binaural -> ensamble -> choir -> hall -> late reflection
+. evolve continuously from identity to identity
+. setup context manager for entering room -> region -> volume -> tile -> position -> point -> non-local -> inf
 
-from github import Github
+motivation:
+. from remote big-bang event, there brain evolution occurs through shape evolution first
+. continuously envolving dynamics are always done through multi-generation knowledge
+. even an empty room has an experience with respect to itself
+. any change occurs through at least one of the observer surviving the transitional phase
+. no exclusive clock attachment is required as something remains static always since inception
 
-# Authentication is defined via github.Auth
-from github import Auth
+optimization:
+. programmable constructors approximate naturally occuring resource provider channels
+. information processing substate can be built from spontaneous transformations whose constructors can be learned for unlimited number of times
+. use generic substrate to transform into resource constructor identity, assume side-effects are possible
+. when possible, set construction task with approximate constructor being available to code over cartesian coordinates pairs at some reaction site that uses those same generic to cause some reaction site simultaneously.
+"""
 
-with open(hidden, "r") as f:
-    access_token = f.read().strip()
+# [0] ț is possible => {g -> Ċ[ț]} is possible with side effect
+# [1] ț is possible with side effect <=> (ē[ħ])(ț x {g -> ħ}) is possible
 
-# using an access token
-auth = Auth.Token(access_token)
-
-# First create a Github instance:
-
-# Public Web Github
-g = Github(auth=auth)
-
-# Github Enterprise with custom hostname
-g = Github(base_url="https://{hostname}/api/v3", auth=auth)
-
-# Then play with your Github objects:
-for repo in g.get_user().get_repos():
-    print(repo.name)
-
-# To close connections after use
-g.close()
+"""
+a constructor of task (t) is possible:
+.. it means there is a resource (g) that is generically occuring in nature
+.. g could be supplied in constructing the construction task (T) for building t (consturctor)
