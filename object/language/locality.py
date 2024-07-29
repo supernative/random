@@ -32,3 +32,10 @@
 # # .. .. that is to remind us of the standard stereo encoding technique which takes the left-right tracks and produces a stereo image with mid at the central point where sides are equally distant from the central limit.
 
  # #  .. Energy could be converted from mass and into mass, so could I use these quantities to provide power supply to some arbitrary device?
+
+einstein: .. ponderable bodies .. sum extending over the atoms and electrons ..
+taking the sum which extended over all the atoms and electrons present in that body ..
+
+it is like the neurons that get weights which gets summed over along with a bias terms …
+
+weights, bias : atoms, electrons
