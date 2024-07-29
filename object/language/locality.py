@@ -30,3 +30,5 @@
 # # .. Deep (layered) networks : (transformer : for handling wave function of the entire system), (encoder-decoder : for handling microphone/room and room/speaker relative functions)
 # # .. Explanation: energy = mass * light * light and planck unit * frequency information = energy -- tells us to define our mass-like quantities to also follow the relation e[+] + e[-] -> gamma + gamma where 'e' at positive and negative polarity together represent the left and right quantities as well.
 # # .. .. that is to remind us of the standard stereo encoding technique which takes the left-right tracks and produces a stereo image with mid at the central point where sides are equally distant from the central limit.
+
+ # #  .. Energy could be converted from mass and into mass, so could I use these quantities to provide power supply to some arbitrary device?
