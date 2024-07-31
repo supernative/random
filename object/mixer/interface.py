@@ -2,3 +2,9 @@
 # All sampler/encoder/constructor related functions are managed here.
 # A constructor will create copies of the frames and make a callable accessible for iterating over the voltages.
 # Samples are bytes.
+
+####### NEW VERSION #######
+
+# Serial communication tools.
+# Port config.
+# Memory mapped files are possible.
