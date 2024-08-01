@@ -59,5 +59,21 @@ graphs could be structured like so:
 a link is a map between two tracks in a stereo image.
 . stereo image : left, right -> mid, side
 
-node points are accessible via the linker
+node points are accessible via the linker.
+"""
+
+
+"""
+signal: ~
+@linker:
+@sampler:
+
+@task: we look for the program whose mid-side remain constant throughout different stages of processing the signal.
+@repo: generate scan report of the entire volume.
+
+@track: is a two dimensional object that tells you what went on around that path.
+@channel: coordinates with other paths in a unitary model.
+@mono: it cannot copy its environment by literally using "fcopy", instead it holds the code or recipe as computer instructions that tells it how to do it.
+@stereo: reconstruction site.
+
 """
