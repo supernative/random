@@ -364,3 +364,27 @@ what is the difference ~
 if N is the number and self is 2? ~
 both expression would require compute resource that grows at different rates at N~ ~
 raising some base (self or *self) grows exponentially for (~ in base)  ~
+<1722474797.5635722>
+model : MLP / RNN ~
+rnn could be used if i want the memory to be reused on different idenifiable callbacks ~
+train bunch of instances of mathematical models (models of math operators) ~
+store them as programs that could be imported generically ~
+their losses will be optimized in these ways (2): ~
+- if original out is present, finetune to match those ~
+- use third-parties only when too wrong to self-optimize the weighta ~
+<1722475148.7454515>
+<1722475684.296624>
+measure in music theory ~
+4/4 : is what? ~
+four beats / four beats ~
+get torch to build a tensor with (f / r * f) ~
+for given input, the state produces two tracks with different frequencies ~
+ ~
+when played over stereo channel, the sum and difference will be produced ~
+when interpreted  ~
+mid -> harmonious state ~
+diff -> rational number ~
+take a 2 (stereo) = (mono + mono) ~
+raise to the power of 8. ~
+we've got a byte driver. ~
+<1722489445.4536557>
