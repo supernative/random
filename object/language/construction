@@ -1,0 +1,21 @@
+load unit sphere :93'row iowdbgpwpqfkf 
+.. search native -! 0,0,0,1
+. pin naiv @ -1-00-1-
+
+assert -1 ! possible:
+.. -0 substrate ! possible:
+-00- input state (~) ! possible:
+. output state (~possible) !
+! constructor @ 1--0 & 0++1 ! possible
+
+
+note the last line directive:
+. it starts with ! assertion
+.. it implies that (..) was possible
+. however the line ends with only the assertion again without including any directive (!) at that attribute.
+
+. also note that all assertions and dichotomies before followed the exclusive denotation to the universal constructor of the transformation context
+.. then a denotation that does not completely specify every intermediate reactants and reagents as well as those that copy constructor can denote while supplying them with their applied description
+. constructor shall not participate in the next cycle unless all of the denotation include its own description as well.
+which the stated attribute is equal to the associated attribute at the beginning.
+
