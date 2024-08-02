@@ -6,4 +6,58 @@ stereo / mono - mid / side - left / right:
 
 theory: the mid-side defines what the stereo image could be interpreted from.
 . for all positions on the stereo field, there is a constant mass which is conserved during conversion.
-. 
+. (source)(code) programmer writes at the highest of level
+. (compilation) preprocessed to handle directives
+ . (preprocess) (#include, #define)
+  . (compilation) preprocessed source compiled into (assembly)(language)
+ . (assembly) compiler sqruits out the substrate dependent code
+. (assembler) convertion of machine to binary
+(object) binary executable
+~ (linker) connects multiple object code together and manages reference issues between modules and linking libraries.
+(executable) ~ computer program!
+
+[runtime] : loader
+.. operating system loads executable binaries to working memory.
+[runtime] : pi
+.. initialize state (as definition @ start) -> loader
+.. program counter (as set @ entry) -> exec
+
+[execution] : serial or parallel
+.. (serial) machine code executed sequentially @ instructed
+ .. modify registers
+ . memory
+. counter
+
+.. machine state : register/memory/counter
+. dynamical(~execution) is possible!
+
+[assembly] : state
+.. boot(strap)
+. program(~) is possible!
+
+[program] : bootstrap @ loader
+.. while in firmware (init system & loads)
+. operating system (~other) is possible!
+
+[init] : hardware[0]
+.. state (loads main program) -> memory
+. jump (~entry) point possible!
+
+[assembler] : state
+.. source (code)
+. level (~assembly) is possible!
+
+.. compilation (source)
+. machine (~compiled) is possible with side-effects!!
+
+.. execution (runtime)
+. assembly (target) -> language program -> machine code
+
+[assembly] : state
+.. execution (while ran) -> substrate
+. (~) possible | pi(~) for (register, memory)
+<- (in assembly, in machine) .. . translates!!
+
+[runtime] : interaction
+.. assembler (is possible)
+. new (~snippet) is possible with side-effect!!
