@@ -1,0 +1,9 @@
+stereo / mono - mid / side - left / right:
+. mid may not be contained in the stereo image
+. squeezing mid expands the image
+. expanding side squeezed the center
+. mid + side -> left and mid - side -> right
+
+theory: the mid-side defines what the stereo image could be interpreted from.
+. for all positions on the stereo field, there is a constant mass which is conserved during conversion.
+. 
