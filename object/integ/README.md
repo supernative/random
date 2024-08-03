@@ -19,6 +19,18 @@ I shall use each one of them, as you will see they each can model unique things 
 
 ## Operational
 
+*biology* : evolution required every transformation taking place as variation and selection by natural means in the substrates of those living entities, are selected by the criterion which also evolved through selective means, are caused to have their mutants survive as the same variable pressure that it would place on the substrates of the replicator population while each maintained their local organizational correlates for their survival depended on that quantity.
+
+- process : variation and natural selection or permutation
+- differentiation : change due to some mutant being present
+- part : co-evolving physical substrates that are disjoint
+- organism : collection of constructors that can construct one of the other constructor in the same subsystem
+- caused : brought to existence and kept as such
+- functional : description in an object making permutation of its states possible via another description given to it
+- structural : description of an object whose substrate contains two or more distinct states and the union of the two being unable to describe anything
+- unit : some quantity in nature that does not change while its neighboring ones do
+
+
 *psychology* : Here we assign each entity capable of having at their state a measure of the attributed quantities.
 
 - organization : open C discussion hosted by Native
