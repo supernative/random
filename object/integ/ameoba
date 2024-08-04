@@ -1,0 +1,2 @@
+return_type function_name(parameter_type1 parameter_name1, parameter_type2 parameter_name2, ...);
+
