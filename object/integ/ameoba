@@ -2,3 +2,70 @@ return_type function_name(parameter_type1 parameter_name1, parameter_type2 param
 // no arithmatic logic unit exists
 // memory mapping is done through natural interactions
 // cartesian theater is possible if it can be thought through a substrate that prepares it
+
+// Header file: Spherical coordinate management of existing program space using their executables to derive the instantaneous position along the memory buffer.
+// Source file: Cartesian coordinate management of existing function space using their parameters to derive the instantaneous momentum along the program queue.
+
+// Program queue has variable length and height of the stack at any state update description.
+// Instantaneous rate of attending the pointers that are participating in the computing process.
+
+
+// cartesian state is a positional view of the memory
+// a positional view have a [x, y, z, *] parameter view with * being shared with momentum view matrix
+// this program can change the parameters between two different states along the runtime path if and only if the spherical programming sharing the * csn permute at least one of the states
+
+
+This is system one:
+
+(0, 0) execute `./position`, (0, 1) `position.c` —> (x, y, z, *)
+(1, 0) compile `position.c`, (1, 1) execute `./momentum`
+
+This is system two:
+(1, 1) execute `./momentum`, (1, 2) `momentum.c` —> (r, phi, theta, *)
+(2, 1) compile `momentum.c`, (2, 2) execute `./position`
+
+Before writing the third system, first tell me what you understood these two systems to be doing.
+
+
+`ameoba.py`
+
+>>> environment = prepare_system(..)
+>>> environment.from_position("./position")
+>>> environment.from_momentum("./momentum")
+
+Environment is prepared with ground level energy:
+- specific organism will have part in the system with their position-momentum dual
+- organism is evolved through environment processes for fixed period of time
+- other constructions are compiled locally with their respective namedpaces
+- local computations are executed globally from their associated attributes
+
+samples = rec(frames=unit_size, channel=num_units)
+position, momentum = samples.T
+
+for unit in units:
+    start = unit.forward(position) + unit    # starting position is the reaction with respect to the positional change in presence of the unit identity it-self
+    stop = unit.backward(momentum) * start
+
+
+`__instance__.forward(cartesian_coordinate)` :
+.. what does it mean?
+. it means to go forward through the internal gates with the data given as properties.
+
+.. this reaches from the lowest point in time to highest point in time
+. total period covers the pass through events given the knowledge provided
+
+.. what does the additive term do?
+. it is assumed that the total displacement of resource inside the instance substrate is reflected at the instance state
+
+`__instance__.backward(spherical_coordinate)` :
+.. what does it do?
+. it asserts the physical correlates that evolves as function of the starting condition
+
+.. multiplicative effect of the starting condition?
+. start is the relative state vector formulation of the instance identity
+
+// systems that run forever self-heal and scale
+what things are possible in that machinary:
+.. do you mean the general purpose computing machinary:
+. no, universal!
+
