@@ -9,18 +9,13 @@ def union(function, image):
     unique, inverse_map = torch.unique(torch.tensor([[function, image]], return_inverses=True, sorted=True)
     return unique, inverse_map
 
-
-
-
-def compute(memory):
-    for state in memory:
+def compute(substrate):
+    for state in substrate:
         start = pi(state) # permutes the order
-        stop = memory[start] # locally accessible information
+        stop = substrate[start] # locally accessible information
         information, knowledge = union(start, stop) # locally inaccessible information and their reversible mapping
         yield information # information observable measurable from that state
-
-
-
+        
 def inner(left, right):
     mid = (left + right) / 2
     side = (left - right) / 2
