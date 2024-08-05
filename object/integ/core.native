@@ -15,27 +15,52 @@ when state’ <- state is possible:
 .. if (state, state‘) -> (state, other) is possible:
 . knowledge is possible
 
-memory is a two-level system with 192k variables per unit:
-.. unit : memory[0, 1] -> (left, right)
-. pi(unit) -> (right, left)
- . step : memory[right, left] -> (mid, side)
-.. mid - left = -side
-.. right + side = mid
-. mid * right - left * side = -side * mid
-. mid / mid * right - left * side / mid = -side
-. 1 * right - left * side / mid + side = 0
-. right + side = (left * side) / mid
-. mid = (left * side) / (side + right)
 
-let start = (left * side) and stop = (side + right):
-.. mid = start / stop
+consistency of measurement:
+.. speed-o-meter is an information medium
+. car installing that device shares one of the computation variable
 
-. -mid * right + left * side = +side * mid
-. (left * side) / side - (mid * right) / side = mid
-. left * 1 - side * (mid / right) - mid = 0
-. side * (mid / right) = (left - mid)
-. side = (left - mid) / (mid / right)
-. side = ((left - mid) * right) / mid
+.. computation variable associated with the state of the car
+. causes it to go into the state which carries an information variable
 
-Since mid = (left * side) / (side + right):
-. side =
+.. police-radar gun is using measuring the speed of the car
+. can measure the information variable at the information medium
+
+.. the device has computation variable that goes into the information medium of the car
+. the car shares another information variable as function of the computation variable in information state
+
+.. information state consists of an operation involving (measure variable, compute variable)
+. where the speed-o-meter changes with its state permuted into (medium variable, *) where (*, radar variable) captures the information via unity.
+
+def one-arm bandit in casino(system):
+    observable, machine = prepare(system, state=psi)
+    subsystem, state = measure(observable, substrate=machine)
+    return state, observable
+
+
+def measurement(system):
+    return information : about(system)
+
+
+def preparation(criterion, machine):
+    for system in machine:
+        substrate = criterion(system)
+        yield substrate
+
+
+def build_system(layers=2):
+    roles = {
+        "agent" : {},
+        "subsystem" : {}
+    }
+
+    def agent(*args, **kwargs):
+        # constructor of the input-output
+        # must remain capable after cycles
+        ..
+
+    def subsystem(*args, **kwargs):
+        # we call these substrates
+        # it goes through changes in its properties
+        # from having one state to having another
+        ..
