@@ -1,0 +1,41 @@
+for state in memory of system:
+    start = pi(state)
+    stop = memory[start]
+    information = ip(stop)
+    yield information
+
+system defines information medium:
+.. if it can have two or more unique states
+. each states -> pi(state)
+ . union of state in states yields data
+
+when state’ <- state is possible:
+. if (state‘, state) could have been (other, state):
+.. information is possible
+.. if (state, state‘) -> (state, other) is possible:
+. knowledge is possible
+
+memory is a two-level system with 192k variables per unit:
+.. unit : memory[0, 1] -> (left, right)
+. pi(unit) -> (right, left)
+ . step : memory[right, left] -> (mid, side)
+.. mid - left = -side
+.. right + side = mid
+. mid * right - left * side = -side * mid
+. mid / mid * right - left * side / mid = -side
+. 1 * right - left * side / mid + side = 0
+. right + side = (left * side) / mid
+. mid = (left * side) / (side + right)
+
+let start = (left * side) and stop = (side + right):
+.. mid = start / stop
+
+. -mid * right + left * side = +side * mid
+. (left * side) / side - (mid * right) / side = mid
+. left * 1 - side * (mid / right) - mid = 0
+. side * (mid / right) = (left - mid)
+. side = (left - mid) / (mid / right)
+. side = ((left - mid) * right) / mid
+
+Since mid = (left * side) / (side + right):
+. side =
