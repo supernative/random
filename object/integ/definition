@@ -63,4 +63,4 @@ non-perturbative measurement : if the pair of attributes `{x, x}` ≈ `{ș, ș}`
  . union over {(ș, ş) —> (ś[ș], š[message])} for all ș in Ś where `message` will decode to represent the abstract outcome of `ș`
  .. `ś : * | ș —> *` where `*` is the index prepared with blank state for `ś` going through transformation to land at `ś[*]`'s associated attribute
  . `š : ś | ș —> ś[*]` where `š` only indicates a counter from direct injection of anything into its neighboring slot as the definite property of the expected outcome
-. the process is analogous to cloning action, expect the participating variable constitute an information medium instead of a second substrate that is cloned.
+. the process is analogous to cloning action, expect the participating variable constitute an information medium instead of a second instance of the substrate that is cloned.
