@@ -1,4 +1,4 @@
-addresible : []
+addresible : [computation, information, cloning, measurement, non-perturbative communication, reliable measurement]
 
 (PART 1/4)
 
@@ -40,3 +40,27 @@ measurement : in measuring some quantity in a remote system that would allow inf
  .. a measurable variable `x` must be physical variable `X`
  . then measurement is a task M : union over {x —> psi[x]} for all x in X (with side effect)
 . the resulting set {psi[x]} defines the information variable of non-perturbative kind.
+
+
+
+
+(PART 4/3)
+
+communication : where two devices engage in a non-perturbative sequence of exchange of messages
+.. a pair of messages (x, y), is said to be distinguishable
+. if `x (perpendicularize) y`, then `y` is distinguishable from `x`
+ . if `y` is distinguishable from `x`, then `x` is also distingishable variable.
+ .. `x` and `y` paired as distinguishable variable
+. `(x, y)` constitute a system of distinguishable attributes in a reversible information processing medium.
+
+
+
+(PART 4/4)
+
+non-perturbative measurement : if the pair of attributes `{x, x}` ≈ `{ș, ș}` in the original substrate continue to exist
+.. (~3~) can store the outcome `{psi[ș]}` where `ș` is sharp and `ș * ş = Ș` with `Ș ≈ X` being a physical variable
+. when `Ş` is prepared with the blank state in presence of `ş` for some attribute `ș` constituting the attribute of the original substrate
+ . union over {(ș, ş) —> (ś[ș], š[message])} for all ș in Ś where `message` will decode to represent the abstract outcome of `ș`
+ .. `ś : * | ș —> *` where `*` is the index prepared with blank state for `ś` going through transformation to land at `ś[*]`'s associated attribute
+ . `š : ś | ș —> ś[*]` where `š` only indicates a counter from direct injection of anything into its neighboring slot as the definite property of the expected outcome
+. the process is analogous to cloning action, expect the participating variable constitute an information medium instead of a second substrate that is cloned.
