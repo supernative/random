@@ -1,0 +1,57 @@
+# reminder : measure in music theory, bars containing several measures
+# score (musical) / sections (instrumentation) / .. / chords (parallel lines in key) / bars (meter) / beats (progression) / steps (measure) / patterns (sequence)
+
+(PART 1/4)
+
+node : description
+edge : constructor
+
+We define consruction task as a link that connects two nodes via edge that connects them.
+Construction is a process of taking the node given as input, and deliver it the target state associated with that initial attribute.
+
+example_composition : {
+    link : {
+        node : <abstract>,
+        edge : <physical>,
+        antinode : <abstract>,
+        connector : <serial/parallel>,
+    },
+}
+
+link : construction task,
+node : input state of the substrate,
+edge : state attribute of the medium,
+antinode : output state of the substrate,
+connector : whether to compose serial or parallel transformation
+
+
+
+(PART 2/4)
+
+parallel composition : left (tensor product) right -> mid (exclusive-or) side : composite task
+.. composite task (mid <- output of left) and (side <- output of right)
+. where only their net effects are combined together.
+
+
+
+
+(PART 3/4)
+
+serial composition : (right-left) is the task of performing (left,) and then (,right) on the same substrate
+.. if Output(left) = Input(right)
+. (right-left) is serial construction.
+
+
+
+
+(PART 4/4)
+
+regular network : these network of tasks are a network without loops
+.. whose nodes are tasks
+. & whose lines are their substrates where
+ . the legitimate input states at the end of each line
+. . are the legitimate output states at its beginning!
+ . loops are excluded because
+. substrate on a loop is a constructor!
+
+
