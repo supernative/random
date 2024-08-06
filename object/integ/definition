@@ -8,7 +8,7 @@ computation:
 
 . reversible information processing:
 .. for state in states of the substrate:
- . union of {state —> pi(state)}
+ . union over {state —> pi(state)}
  .. defines information implicitly
 . `pi` is an operator in that space.
 
@@ -25,7 +25,7 @@ if S and G are two compatible substrate with compability satisfying the implicit
 information : requires a clonable media on which information is the act of retaining a copy while relaying the original
 .. start with an existing information media (`S`) and create two instances of it (`Ş, Ș`).
 . cloning task is defined on `Ș` with one input variable `ș` which would be used to store the copy
- . it is a task Ċ[Ș](ş) : {(ș, ş) —> (ș, ș)} for all ș in Ș
+ . it is a task Ċ[Ș](ş) : union over {(ș, ş) —> (ș, ș)} for all ș in Ș
  .. {Ş (exclusive-or) Ș} produces an information medium with `ş` not related to `ș` in any way
 . Ċ may produce side-effects but it will be possible to prepare Ş with generic naturally occuring resources.
 
@@ -33,5 +33,10 @@ information : requires a clonable media on which information is the act of retai
 
 (PART 3/4)
    
-measurement : i
-   
+measurement : in measuring some quantity in a remote system that would allow information state to be persistent
+.. measurer sends an information variable to the medium of the other that satisfies the permutation of their joint state
+. the other has one of its computation variable at that state while the permutation used the information variable of the measurer's system
+ . a union over the states that recursively distinguish one change from counterfactual of that change
+ .. a measurable variable `x` must be physical variable `X`
+ . then measurement is a task M : union over {x —> psi[x]} for all x in X (with side effect)
+. the resulting set {psi[x]} defines the information variable of non-perturbative kind.
