@@ -1,0 +1,37 @@
+addresible : []
+
+(PART 1/4)
+
+computation:
+.. defined on the states of a substrate of at least two states
+. permutation over the states while uniting each computed elements together
+
+. reversible information processing:
+.. for state in states of the substrate:
+ . union of {state —> pi(state)}
+ .. defines information implicitly
+. `pi` is an operator in that space.
+
+if S and G are two compatible substrate with compability satisfying the implicit construction criteria:
+.. each of them could be composed together via their information variable (s, g)
+. a composite system {S (exclusive-or) G} is a system with observable {(s, g) | (s in S and g in G)}
+ . it is possible to build a system of cartesian products with the two and any other variable
+. the cartesian chain of possible product state combination could use the system to process information.
+
+
+
+(PART 2/4)
+
+information : requires a clonable media on which information is the act of retaining a copy while relaying the original
+.. start with an existing information media (`S`) and create two instances of it (`Ş, Ș`).
+. cloning task is defined on `Ș` with one input variable `ș` which would be used to store the copy
+ . it is a task Ċ[Ș](ş) : {(ș, ş) —> (ș, ș)} for all ș in Ș
+ .. {Ş (exclusive-or) Ș} produces an information medium with `ş` not related to `ș` in any way
+. Ċ may produce side-effects but it will be possible to prepare Ş with generic naturally occuring resources.
+
+
+
+(PART 3/4)
+   
+measurement : i
+   
