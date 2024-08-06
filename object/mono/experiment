@@ -1,4 +1,4 @@
-addressible : [parallel]
+addressible : [parallel, side chaining, branching, interference, union, merging]
 
 (PART 1/4)
 
@@ -8,3 +8,5 @@ interference : if I use the two states `ș | ś` of the measures `m[š, š]` in 
  . (Deutsch) if we take the union of the two states for a permutation performed over each of them at least once, then it cannot carry any information.
  .. the union over the individual states of the individual substrates constitute merging of the universes at that point in history and all the branches have been offloaded.
 . . the two channels are now operationally disjoint and local to our environment.
+ . here lies the program that unites the combined effect of the two locally disjoint substrates!
+
