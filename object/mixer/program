@@ -1,0 +1,43 @@
+addressible : [direct injection, mono-stereo programming, channel, logical subsystem, decoder group, reversible media, mixing matrix]
+
+(PART 1/4)
+
+track : it can be either in mono or stereo form.
+.. stereo means the minimum level of autonomy is preserved.
+. mono requires a stereo channel to compile.
+
+
+(PART 2/4)
+
+channel : it represents the programming.
+.. requires incoming signal to be either loaded from a media or bound through logical ports.
+. defines the exact permutation of all the states.
+ . could be controlled from the outside the parameters of constitution.
+ .. accepts physical side-chained variables and could induct another channel as its own side chain.
+. could determine the flow of information when subjected to a bus drive.
+
+
+(PART 3/4)
+
+media : contains the executable needed by a channel.
+.. encodes information in terms of possible measure with degrees of differentiable knowledge.
+. there are bases which engage multiple channels in runtime in order to propagate through the desired channels.
+
+
+(PART 4/4)
+
+decoding : happens at the channel level where a permutation produces compatible state in an entangled substrate.
+.. substrate are subjected to changes occuring at the channel space (possibly from multitrack arrangement <—> master output) which jointly permute some other state
+. and are subject of the change that flows into the media through defined relationship to a disjoint system
+ . when the logical subsystem is engaged due to an ordered permutation brought into the network that is a recepient of message
+ .. the track associated with the variable stored at the pointer, goes through differentiable change in its amplitude(s)
+. when there is a differentiable change in one of two tracks defined as stereo, the mid-side matrix transform the left-right via scaling of the core (mid)
+
+(PART 5/4)
+
+state : could have at most three tracks when balanced for any isolated system.
+.. input-thru arrives at the receiver channel where the reagent gets a copy of the substrate back via thru line.
+. the substrate attributes are prepared from naturally occuring loops that engage the thru track whenever there is an interference, and flips the polarity when there isn't
+ . the output channel now prepares three levels of change to counteract any discontinuous change via consultation with the reagent
+. the solution is a mixture of physical-logical-counterfactual information complex.
+
