@@ -1,0 +1,71 @@
+import os
+
+with open("template", "rb") as f:
+    data = f.read()
+
+(1/4) This part of the file will cause error and we want to capture the state of the computer.
+(2/4) Label the state with error possible given this file as "error constructor".
+(3/4) No python interpreter can run this file without raising error and the file shall not be modified.
+(4/4) Label the state with correction possible given this file as "error destructor".
+
+Setup template with input (error constructor is possible) and output (error destructor is possible) for next (construction theory is possible).
+
+(1/4) Create a substrate of two possible states (2.4, 4.4).
+(2/4) Write a system with subsystem (1.4, 4.4).
+(3/4) Approximate an agent for subsystem (1.4 : 2.4, 3.4, 4.4).
+(4/4) Compile the system as ("python error correction").
+
+Preparing the task:
+1..4 Map source code to stderr code no
+.2.4 Map stderr code to return code
+..34 Map return code to counter code
+...4 Map counter code to source code
+
+
+Criteria for Forgetting:
+.. criterion for remembering
+. succeed in the opposite direction
+ . that agent which wins the game is the memory
+. in presence of the new memory another agent is the memory of the memory
+
+
+A substrate is need under a named system:
+.. every substrate is a dictionary
+. each subsystem is paired with (agent, substrate)
+ . all pairs have a state under the name as (named, agent, substrate)
+. all states have a name under the system as (name, state)
+
+system : {
+    subscribers : [],
+    names : []
+}
+
+Configuration of subsystem:
+
+subsystem : {
+    agent : {
+        named : [],
+        state : [],
+    }
+    substrate : {
+        state : [],
+        name : [],
+    }
+}
+
+Knowledge graph and namespaces:
+
+names : [
+    pritom, integer, super
+]
+
+for subsystem in system[subscribers]:
+    name, space = subsystem
+    if name in subsystem[agent][named]:
+        state = subsystem[agent][state]
+        if state in subsystem[substrate][state]:
+            attribute = subsystem[substrate][name]
+            if name in attribute:
+               if name in system[names]:
+                   space.append((attribute, state))
+    
