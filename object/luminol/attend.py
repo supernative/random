@@ -97,4 +97,11 @@ explanation : when callback structure is designed for a model
   .. **stereo-image** : a two dimensional object defining a bijective map from the set **spherical** to **cartesian** (see: state-space)
 .. .. .. **stack** : it is a set of **observable** quantities of dimension two or more that gets processed via a **reversible computation media**
 .. .. .. .. **rerversible computation media** : it is a substrate with a set of at least two states such that for all observable in the states a permutation of that observable maps that variable to another variable whose and the union of all those variable yield another observable that implicitly define the information variable.
+ .. while preparing the outdata buffer, there are disjoint substrates that compute the observables to be made available through populating the buffer-in frames:
+ .. .. for all frames equaling indata ~ outdata via `frame (int) ~ time (CData)` programming, model maps the left-right reconstruction of the indata buffer to the mid-side matrix that is responsible for filling-in the outdata buffer (see: reversible computation media)
+ .. .. each frame is subjected to the **bijection** constituted in defining the stereo-image potential (see: spherical, cartesian)
+ .. .. **bijection** : a map that defines the integer-interger functional over all mid-side association to compute the **error rate**(s)
+ .. .. **error rate** : a quantity which is a direct injection of the accumulated losses over the observable sets in permutating their variable while the elected set contributes to the mid-side processing
+
+
                                                                                                              
