@@ -1,16 +1,17 @@
-import torch
 
-def multi_head_attention(queries, keys, values):
-    # Permute the keys tensor to align dimensions for matrix multiplication
-    keys_permuted = keys.permute(0, 2, 1, 3)
-    
-    # Compute attention scores
-    attention_scores = torch.matmul(queries, keys_permuted)
-    
-    # Apply softmax to obtain attention weights
-    attention_weights = torch.nn.functional.softmax(attention_scores, dim=-1)
-    
-    # Compute the attention output
-    attention_output = torch.matmul(attention_weights, values)
-    
-    return attention_output
+def processor(theta):
+    processor : set of angle (theta) -> cycle of frequency (pi)
+
+def engagement(phi):
+    engagement : set of worker (phi) -> set of ordered [theta]
+
+def activation(rho):
+    activation : set of observable (rho) -> set of ordered [phi]
+
+def state(theta, phi, rho):
+    t : time.time()
+    state : (processor, engagement, activation) -> ({x ~ y}, {y ~ z}, {z ~ t})
+
+x : set of parameter (angle) -> set of position (worker)
+y : set of amplitude (worker) -> set of value (observable)
+z : set of measure (observable) -> set of attribute (variable)
