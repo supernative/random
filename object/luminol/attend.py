@@ -23,39 +23,19 @@ z : set of measure (observable) -> set of attribute (variable)
 (Part 2:4)
 
 
-import numpy as np
-import sounddevice as sd
-
-# Callback function
-def callback(indata, outdata, frames, time, status):
-    """
-    Process audio data in real-time.
-
-    Parameters:
-    - indata: Buffer containing input audio data.
-    - outdata: Buffer to store output audio data.
-    - frames: Number of frames of audio data.
-    - time: Timestamp information from CData.
-    - status: Status flags indicating any errors or information.
-    """
-    if status:
-        print(f"Status: {status}")
-
-    # Example: Copy input data to output (loopback)
-    outdata[:] = indata
-
-    # Accessing timestamp information
-    print(f"Timestamp: {time['current']:.2f} seconds")
-
-# Audio stream setup
-stream = sd.Stream(callback=callback, channels=2, dtype='float32')
-
-with stream:
-    print("Press Ctrl+C to stop the stream.")
-    try:
-        sd.sleep(10000)  # Keep the stream active for 10 seconds
-    except KeyboardInterrupt:
-        pass
+architecture : (env) requires a callback function that defines specified signature in constructing its object system
+.. <callback> defines a **data** stack whose attributes are (indata, outdata, frames, times) mapping (buffer/in, buffer/out, k/frame, t/time) parameter spaces
+.. {buffer : (in, k), (t, out)} produces **left** and **right** variables
+.. **left** and **right** : a pair of node/antinode set pair.
+ .. a model with mid searches for parameter `side` such that (mid, side) ~ (left, right) for buffer (in) over (k) frames across (t) timesteps
+ .. {model : (side, buffer), (frame, step)} contains the correct mid that explains the data at that input channels.
+.. model[mid] that has the minimum energy defines a quantity `i` (see: I)
+.. **I** : it is a two dimensional matrix with [0, 0] down the diagonals.
+ .. model[mid @ identity] maps mid to quantity called `rho` (see: spherical)
+ .. (rho[i], phi[i], theta[i]) has the same identity[mid][model] for whose encoder maps (x[i - ī], y[i - ī], z[i - ī]) to the same (len(k), t) approaches (k, len(t)) for (k and t)++
+.. (ħ[x], mu[y], psi[z]) while i is static at i‘
+.. {(i‘‘ : ħ, mu, psi)} : (i, ī, î) under the static identity[i][mid][model][buffer][in][left, right][frame, time][data, *][callback][[[env]]]
+ .. {(i, ī, î) : (psi[i‘‘‘], mu[i‘‘‘], ħ[i‘‘‘])} : (+, +, +) .. [[[model]]]
 
 
 
