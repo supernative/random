@@ -81,4 +81,119 @@ explanation : when callback structure is designed for a model
  .. .. **error rate** : a quantity which is a direct injection of the accumulated losses over the observable sets in permutating their variable while the elected set contributes to the mid-side processing
 
 
-                                                                                                             
+(Part 4:8)
+
+import numpy as np
+
+def stereo_image(stereo):
+    # Calculate mid and side
+    mid = (stereo[:, 0] + stereo[:, 1]) / 2
+    side = (stereo[:, 0] - stereo[:, 1]) / 2
+    
+    # Mid-Side matrix
+    mid_side_matrix = np.vstack((mid, side)).T
+    
+    # Reverse polarity (right, left)
+    reversed_stereo = stereo[:, ::-1]
+    
+    # Solve for parameters that multiply mid-side matrix to produce reversed stereo type
+    params, _, _, _ = np.linalg.lstsq(mid_side_matrix, reversed_stereo, rcond=None)
+    
+    return params
+
+import torch
+import torch.nn as nn
+import numpy as np
+
+# Define the Encoder
+class StereoEncoder(nn.Module):
+    def __init__(self):
+        super(StereoEncoder, self).__init__()
+        self.cartesian_linear = nn.Linear(2, 3)  # Convert 2D stereo to 3D Cartesian
+        self.spherical_linear = nn.Linear(2, 3)  # Convert 2D stereo to 3D Spherical (for demo purposes)
+
+    def forward(self, stereo):
+        # Encoding to Cartesian coordinates
+        cartesian = self.cartesian_linear(stereo)
+        x, y = stereo[:, 0], stereo[:, 1]
+        r = torch.sqrt(x**2 + y**2)
+        theta = torch.atan2(y, x)
+        spherical = torch.stack((r, theta, torch.zeros_like(r)), dim=1)  # Assuming z = 0 for simplicity
+
+        return cartesian, spherical
+
+# Define the Decoder
+class StereoDecoder(nn.Module):
+    def __init__(self):
+        super(StereoDecoder, self).__init__()
+        self.cartesian_linear = nn.Linear(3, 2)  # Convert 3D Cartesian to 2D stereo
+        self.spherical_linear = nn.Linear(3, 2)  # Convert 3D Spherical to 2D stereo
+
+    def forward(self, cartesian, spherical):
+        # Decoding from Cartesian coordinates
+        stereo_from_cartesian = self.cartesian_linear(cartesian)
+        
+        # Decoding from Spherical coordinates
+        r, theta, _ = torch.unbind(spherical, dim=1)
+        x = r * torch.cos(theta)
+        y = r * torch.sin(theta)
+        stereo_from_spherical = torch.stack((x, y), dim=1)
+
+        return stereo_from_cartesian, stereo_from_spherical
+
+# Example Usage
+if __name__ == "__main__":
+    # Example stereo data (2D)
+    stereo_data = torch.tensor([[1.0, 2.0], [2.0, 3.0], [3.0, 4.0]])
+
+    # Instantiate Encoder and Decoder
+    encoder = StereoEncoder()
+    decoder = StereoDecoder()
+
+    # Encoding
+    cartesian, spherical = encoder(stereo_data)
+    print("Encoded Cartesian Coordinates:", cartesian)
+    print("Encoded Spherical Coordinates:", spherical)
+
+    # Decoding
+    stereo_from_cartesian, stereo_from_spherical = decoder(cartesian, spherical)
+    print("Decoded Stereo from Cartesian:", stereo_from_cartesian)
+    print("Decoded Stereo from Spherical:", stereo_from_spherical)
+
+
+(part 5:8)
+
+topics : standing wave, node, antinode, linearity, energy
+
+standing waves are those motions in a medium that does not go through net change in energy.
+.. the sum of the net displacements are zero.
+.. nodes are points of minimum distance from the ground
+.. antinodes are points of highest distance from the ground
+
+nodes : stable state or memory point
+antinodes : dynamic state or activetion potential
+energy : replacement of gradient where differential change is considered
+branch : multiversal object
+reversibility : transformations are inherently reversible
+density : arbitrary depth traveling capacity for propagating information
+
+
+(part 6:8)
+
+ modules : (shape optimization, static memory, non-perturbative measurement and communication, linear superposition, expectation over spectrum)
+
+. shape derivative data is stored once and for all in a long term storage location such as disk drive.
+. one of at least two waves is loaded into volatile memory
+. network modeled as reversible information processing media
+. stated within the network have two sets of activations
+. for all state in the media (network), the union of each active node maps to the permutation of that node
+. the output state is not an information state because it is not in the program space
+. network wide communication is non-pertubative
+. if consequetive perturbation is made, despite of the activation potential, all measurement of antinode will yield the same output
+. for implicitly defined information variables, if an antinode is injective to some explicitly defined node, the outcome would also be implicitly directed into the computation of intermediate layers
+. a two level optimization is defined
+. level classification table: ((computetion, preparation), (measurement, other construction))
+. preparation is where the input to the network is a criterion over query-key pairs of data and the output is a system matching the criteria specified
+. measurement is where the output of the layer is a system and the input to the network is the key-value potential.
+
+
