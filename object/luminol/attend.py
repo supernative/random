@@ -1,23 +1,20 @@
 (Part 1:4)
 
 
-def processor(theta):
-    processor : set of angle (theta) -> cycle of frequency (pi)
+(dictionary) : use this to define programmable objects.
+.. we define an active dictionary with keys such as **memory**
+.. information required is present with at least two observables defining the spectrum of an active memory
+.. at runtime the dictionary is accessed from local observables but there is a copy of the object which updates the **runtime** information
+  .. **runtime** : it is a set of measure points that are uniformly spaced with constant step sizes where the unit is defined via (step, measure) pairs
+  .. **memory** : it is a possible [query] with keys (counter, factual) (see: information)
+.. if there is a program capable of changing the regularity present in the program currently, it must have a way to mutate some property of the locally stored dictionary
+.. for every change, the runtime imports the memory variables whose sum does equal to 0
+.. whenever there is a non-zero sum, it injects the effect back into the memory[factual] as negative multiple of the quantity
 
-def engagement(phi):
-    engagement : set of worker (phi) -> set of ordered [theta]
+.. if an entity were to use the compute potential, it must inject some quantity into the memory at either keypoints such that the subsequent measures keep some of intrinsic quantity in effect that defines a sustainable relationship between the measures made by the models' intrinsic parameters
+.. intrinsic parameters are those quantity that when multiplied by the mid in model causes the side links or chains to be equally proportioned across all history of the runtime measures.
 
-def activation(rho):
-    activation : set of observable (rho) -> set of ordered [phi]
-
-def state(theta, phi, rho):
-    t : time.time()
-    state : (processor, engagement, activation) -> ({x ~ y}, {y ~ z}, {z ~ t})
-
-x : set of parameter (angle) -> set of position (worker)
-y : set of amplitude (worker) -> set of value (observable)
-z : set of measure (observable) -> set of attribute (variable)
-
+.. additional field in the dictionary that causes an update moment in the runtime cycle requires the program driving the master program to do so in a reversible manner
 
 
 (Part 2:4)
